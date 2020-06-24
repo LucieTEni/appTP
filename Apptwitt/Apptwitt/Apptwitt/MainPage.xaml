@@ -45,12 +45,14 @@
             </StackLayout>
         </ScrollView>
         <ContentView>
-            <StackLayout Orientation="Vertical" HeightRequest="75">
-                <StackLayout Orientation="Horizontal" Margin="10,25" HorizontalOptions="Center">
-                    <Button Text="Fil"  BackgroundColor="Transparent" FontSize="Small"></Button>
-                    <Button Text="Notifications" BackgroundColor="Transparent" FontSize="Small"></Button>
-                    <Button Text="Message" BackgroundColor="Transparent" FontSize="Small"></Button>
-                    <Button Text="Moi" BackgroundColor="Transparent" FontSize="Small"></Button>
+            <StackLayout Orientation="Vertical"  VerticalOptions="CenterAndExpand" BackgroundColor="WhiteSmoke">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <StackLayout Orientation="Horizontal" Spacing="-10">
+                        <Button Text="Fil"  BackgroundColor="Transparent"></Button>
+                        <Button Text="Notifications" BackgroundColor="Transparent"></Button>
+                        <Button Text="Message" BackgroundColor="Transparent"></Button>
+                        <ImageButton Source="profil.png" Aspect="AspectFit" HorizontalOptions="CenterAndExpand"></ImageButton>
+                    </StackLayout>
                 </StackLayout>
             </StackLayout>
         </ContentView>
