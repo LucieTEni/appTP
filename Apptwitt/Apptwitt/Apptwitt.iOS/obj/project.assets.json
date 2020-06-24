@@ -1016,24 +1016,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ltouchar2019\\.nuget\\packages\\": {},
+    "C:\\Users\\Boulot\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projet\\appTP\\Apptwitt\\Apptwitt\\Apptwitt.iOS\\Apptwitt.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Boulot\\Documents\\projet\\Apptwitt\\Apptwitt\\Apptwitt.iOS\\Apptwitt.iOS.csproj",
       "projectName": "Apptwitt.iOS",
-      "projectPath": "D:\\projet\\appTP\\Apptwitt\\Apptwitt\\Apptwitt.iOS\\Apptwitt.iOS.csproj",
-      "packagesPath": "C:\\Users\\ltouchar2019\\.nuget\\packages\\",
-      "outputPath": "D:\\projet\\appTP\\Apptwitt\\Apptwitt\\Apptwitt.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Boulot\\Documents\\projet\\Apptwitt\\Apptwitt\\Apptwitt.iOS\\Apptwitt.iOS.csproj",
+      "packagesPath": "C:\\Users\\Boulot\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Boulot\\Documents\\projet\\Apptwitt\\Apptwitt\\Apptwitt.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\ltouchar2019\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Boulot\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1047,8 +1047,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "D:\\projet\\appTP\\Apptwitt\\Apptwitt\\Apptwitt\\Apptwitt.csproj": {
-              "projectPath": "D:\\projet\\appTP\\Apptwitt\\Apptwitt\\Apptwitt\\Apptwitt.csproj"
+            "C:\\Users\\Boulot\\Documents\\projet\\Apptwitt\\Apptwitt\\Apptwitt\\Apptwitt.csproj": {
+              "projectPath": "C:\\Users\\Boulot\\Documents\\projet\\Apptwitt\\Apptwitt\\Apptwitt\\Apptwitt.csproj"
             }
           }
         }

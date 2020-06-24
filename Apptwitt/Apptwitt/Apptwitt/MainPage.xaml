@@ -6,11 +6,46 @@
              mc:Ignorable="d"
              x:Class="Apptwitt.MainPage">
 
-    <StackLayout>
+    <StackLayout Orientation="Vertical">
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <ContentView BackgroundColor="#58B0F0">
+            <StackLayout Orientation="Horizontal" Margin="10, 25">
+                <Label Text="Nouveau" VerticalTextAlignment="Center"></Label>
+                <Label Text="Accueil" HorizontalTextAlignment="Center"
+                    HorizontalOptions="CenterAndExpand"></Label>
+                <Label Text="Rechercher" VerticalTextAlignment="Center"></Label>
+            </StackLayout>
+        </ContentView>
+        <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"
+                        Margin="10">
+                        <ContentView Margin="10" WidthRequest="75" HeightRequest="75" BackgroundColor="Black"></ContentView>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Lulu" TextColor="Black"></Label>
+                                <Label Text="lulu@email.com" TextColor="Black"></Label>
+                                <Label Text="50s" TextColor="Black" HorizontalOptions="EndAndExpand"></Label>
+                            </StackLayout>
+                            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                            euismod convallis dolor. Quisque ultricies porttitor nunc venenatis facilisis. "
+                            TextColor="Black"></Label>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label HorizontalOptions="FillAndExpand" Text="Répondre"
+                            HorizontalTextAlignment="Center" TextColor="Black"></Label>
+                        <Label HorizontalOptions="FillAndExpand" Text="Retweet"
+                            HorizontalTextAlignment="Center" TextColor="Black"></Label>
+                        <Label HorizontalOptions="FillAndExpand" Text="Favoris"
+                            HorizontalTextAlignment="Center" TextColor="Black"></Label>
+                    </StackLayout>
+                    <ContentView HeightRequest="0.5" BackgroundColor="WhiteSmoke"
+                        HorizontalOptions="FillAndExpand">
+                    </ContentView>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </StackLayout>
-
 </ContentPage>

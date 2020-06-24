@@ -566,25 +566,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ltouchar2019\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Boulot\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projet\\appTP\\Apptwitt\\Apptwitt\\Apptwitt\\Apptwitt.csproj",
+      "projectUniqueName": "C:\\Users\\Boulot\\Documents\\projet\\Apptwitt\\Apptwitt\\Apptwitt\\Apptwitt.csproj",
       "projectName": "Apptwitt",
-      "projectPath": "D:\\projet\\appTP\\Apptwitt\\Apptwitt\\Apptwitt\\Apptwitt.csproj",
-      "packagesPath": "C:\\Users\\ltouchar2019\\.nuget\\packages\\",
-      "outputPath": "D:\\projet\\appTP\\Apptwitt\\Apptwitt\\Apptwitt\\obj\\",
+      "projectPath": "C:\\Users\\Boulot\\Documents\\projet\\Apptwitt\\Apptwitt\\Apptwitt\\Apptwitt.csproj",
+      "packagesPath": "C:\\Users\\Boulot\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Boulot\\Documents\\projet\\Apptwitt\\Apptwitt\\Apptwitt\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\ltouchar2019\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Boulot\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -634,7 +632,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
