@@ -9,11 +9,11 @@
     <StackLayout Orientation="Vertical">
         <!-- Place new controls here -->
         <ContentView BackgroundColor="#58B0F0">
-            <StackLayout Orientation="Horizontal" Margin="10, 25">
-                <Label Text="Nouveau" VerticalTextAlignment="Center"></Label>
+            <StackLayout Orientation="Horizontal" Margin="20, 25">
+                <ImageButton Source="pencil.png" WidthRequest="25" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" BackgroundColor="#58B0F0" Aspect="AspectFit"></ImageButton>
                 <Label Text="Accueil" HorizontalTextAlignment="Center"
-                    HorizontalOptions="CenterAndExpand"></Label>
-                <Label Text="Rechercher" VerticalTextAlignment="Center"></Label>
+                    HorizontalOptions="CenterAndExpand" VerticalOptions="Center" TextColor="White" FontSize="Title"></Label>
+                <ImageButton Source="search.png" WidthRequest="25" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" BackgroundColor="#58B0F0" Aspect="AspectFit"></ImageButton>
             </StackLayout>
         </ContentView>
         <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
@@ -21,7 +21,7 @@
                 <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"
                         Margin="10">
-                        <ContentView Margin="10" WidthRequest="75" HeightRequest="75" BackgroundColor="Black"></ContentView>
+                        <Image Source="https://picsum.photos/50/50/?random)" Aspect="AspectFit" WidthRequest="85" Margin="10"></Image>
                         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
                             <StackLayout Orientation="Horizontal">
                                 <Label Text="Lulu" TextColor="Black"></Label>
@@ -33,13 +33,10 @@
                             TextColor="Black"></Label>
                         </StackLayout>
                     </StackLayout>
-                    <StackLayout Orientation="Horizontal">
-                        <Label HorizontalOptions="FillAndExpand" Text="Répondre"
-                            HorizontalTextAlignment="Center" TextColor="Black"></Label>
-                        <Label HorizontalOptions="FillAndExpand" Text="Retweet"
-                            HorizontalTextAlignment="Center" TextColor="Black"></Label>
-                        <Label HorizontalOptions="FillAndExpand" Text="Favoris"
-                            HorizontalTextAlignment="Center" TextColor="Black"></Label>
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                        <ImageButton Source="reply.png" HorizontalOptions="CenterAndExpand" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
+                        <ImageButton Source="retweet.png" HorizontalOptions="CenterAndExpand" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
+                        <ImageButton Source="favorite.png" HorizontalOptions="CenterAndExpand" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
                     </StackLayout>
                     <ContentView HeightRequest="0.5" BackgroundColor="WhiteSmoke"
                         HorizontalOptions="FillAndExpand">
@@ -47,5 +44,15 @@
                 </StackLayout>
             </StackLayout>
         </ScrollView>
+        <ContentView>
+            <StackLayout Orientation="Vertical" HeightRequest="75">
+                <StackLayout Orientation="Horizontal" Margin="10,25" HorizontalOptions="Center">
+                    <Button Text="Fil"  BackgroundColor="Transparent" FontSize="Small"></Button>
+                    <Button Text="Notifications" BackgroundColor="Transparent" FontSize="Small"></Button>
+                    <Button Text="Message" BackgroundColor="Transparent" FontSize="Small"></Button>
+                    <Button Text="Moi" BackgroundColor="Transparent" FontSize="Small"></Button>
+                </StackLayout>
+            </StackLayout>
+        </ContentView>
     </StackLayout>
 </ContentPage>
