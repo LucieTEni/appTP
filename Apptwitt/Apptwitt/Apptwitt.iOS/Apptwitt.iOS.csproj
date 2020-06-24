@@ -72,13 +72,13 @@
     <ImageAsset Include="Assets.xcassets\Images.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Images.imageset\pencil.png">
+    <ImageAsset Include="Assets.xcassets\Images.imageset\profil.png.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Images.imageset\pencil1.png">
+    <ImageAsset Include="Assets.xcassets\Images.imageset\profil.png1.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\Images.imageset\pencil2.png">
+    <ImageAsset Include="Assets.xcassets\Images.imageset\profil.png2.png">
       <Visible>false</Visible>
     </ImageAsset>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
