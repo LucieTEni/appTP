@@ -51,7 +51,6 @@
                         <Button Text="Fil"  BackgroundColor="Transparent"></Button>
                         <Button Text="Notifications" BackgroundColor="Transparent"></Button>
                         <Button Text="Message" BackgroundColor="Transparent"></Button>
-                        <ImageButton Source="profil.png" Aspect="AspectFit" WidthRequest="30" HorizontalOptions="CenterAndExpand"></ImageButton>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
