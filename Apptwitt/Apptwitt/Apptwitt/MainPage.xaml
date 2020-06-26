@@ -30,32 +30,37 @@
             </StackLayout>
             <Button Text="Se connecter" HorizontalOptions="FillAndExpand" Clicked="Connected_Clicked"></Button>
         </StackLayout>
-        <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="Tweets" IsVisible="False">
-            <StackLayout Orientation="Vertical">
-                <StackLayout Orientation="Vertical" x:Name="ListTweet">
-                    <StackLayout Orientation="Horizontal"
-                        Margin="10">
-                        <Image Source="https://picsum.photos/50/50/?random)" Aspect="AspectFit" WidthRequest="85" Margin="10"></Image>
-                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-                            <StackLayout Orientation="Horizontal">
-                                <Label x:Name="Pseudo" Text="" TextColor="Black"></Label>
-                                <Label x:Name="DateCreation" Text="" TextColor="Black"></Label>
-                                <Label x:Name="NameUser" Text="" TextColor="Black" HorizontalOptions="EndAndExpand"></Label>
+        <ScrollView  VerticalOptions="FillAndExpand" x:Name="Tweets" IsVisible="False">
+            <ListView x:Name="ListTweet">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical">
+                                <StackLayout Orientation="Vertical">
+                                    <StackLayout Orientation="Horizontal">
+                                        <StackLayout Orientation="Horizontal" Margin="15">
+                                            <Image Source="https://picsum.photos/50/50/?random)" Aspect="AspectFit" WidthRequest="85" Margin="10"></Image>
+                                            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                                <StackLayout Orientation="Horizontal">
+                                                    <Label  Text="{Binding Pseudo}" TextColor="Black"></Label>
+                                                    <Label Text="{Binding DateCreation}" TextColor="Black"></Label>
+                                                </StackLayout>
+                                                <Label Text="{Binding Texte}"
+                                                            TextColor="Black"></Label>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                                            <ImageButton Source="reply.png" HorizontalOptions="CenterAndExpand" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
+                                            <ImageButton Source="retweet.png" HorizontalOptions="CenterAndExpand" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
+                                            <ImageButton Source="favorite.png" HorizontalOptions="CenterAndExpand" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </StackLayout>
                             </StackLayout>
-                            <Label x:Name="Texte" Text=""
-                            TextColor="Black"></Label>
-                        </StackLayout>
-                    </StackLayout>
-                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
-                        <ImageButton Source="reply.png" HorizontalOptions="CenterAndExpand" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
-                        <ImageButton Source="retweet.png" HorizontalOptions="CenterAndExpand" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
-                        <ImageButton Source="favorite.png" HorizontalOptions="CenterAndExpand" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
-                    </StackLayout>
-                    <ContentView HeightRequest="0.5" BackgroundColor="WhiteSmoke"
-                        HorizontalOptions="FillAndExpand">
-                    </ContentView>
-                </StackLayout>
-            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </ScrollView>
         <ContentView x:Name="BarreNotif" IsVisible="False">
             <StackLayout Orientation="Vertical"  VerticalOptions="CenterAndExpand" BackgroundColor="WhiteSmoke">

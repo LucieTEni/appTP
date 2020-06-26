@@ -28,6 +28,8 @@ namespace Apptwitt
             Console.WriteLine("You're connected");
             Message.Text = ("");
             Message.IsVisible = false;
+            Identifiant.Text = ("lulurouge2");
+            Password.Text = ("1456lulu");
             if (TService.Authenticate(Identifiant.Text, Password.Text) == true)
             {
                 Message.IsVisible = true;
@@ -35,14 +37,7 @@ namespace Apptwitt
                 BarreNotif.IsVisible = true;
                 Tweets.IsVisible = true;
                 Formulaire.IsVisible = false;
-                List<Tweets> tweet = TService.GetTweets("tweet");
-                foreach (Tweets tweets in tweet)
-                {
-                    Pseudo.Text = tweets.Pseudo;
-                    DateCreation.Text = tweets.DateCreation;
-                    Texte.Text = tweets.Texte;
-                    Console.WriteLine(tweets.Pseudo);
-                }
+                this.ListTweet.ItemsSource = new TwitterService().GetTweets();
             }
             if (!TService.Authenticate(Identifiant.Text, Password.Text))
             {

@@ -18,7 +18,7 @@ namespace Apptwitt.Services
             }
         }
 
-        public List<Tweets> GetTweets(string Tweet)
+        public List<Tweets> GetTweets()
         {
             List<Tweets> tweets = new List<Tweets>();
             tweets.Add(new Tweets("lulurouge", "pouloulou", "28-05-2020"));

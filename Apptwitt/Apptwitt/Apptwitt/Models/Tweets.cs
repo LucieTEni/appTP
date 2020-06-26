@@ -7,11 +7,11 @@ namespace Apptwitt
     public class Tweets
     {
         private string id;
-        public string Pseudo;
+        public string Pseudo { get; set; }
         private string identifiant;
         private string nameUser;
-        public string Texte;
-        public string DateCreation;
+        public string Texte { get; set; }
+        public string DateCreation { get; set; }
 
         public string Id { get => id; set => id = value; }
         public string Identifiant { get => identifiant; set => identifiant = value; }
