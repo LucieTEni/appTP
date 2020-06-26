@@ -10,16 +10,30 @@
         <!-- Place new controls here -->
         <ContentView BackgroundColor="#58B0F0">
             <StackLayout Orientation="Horizontal" Margin="20, 25">
-                <ImageButton Source="pencil.png" WidthRequest="25" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" BackgroundColor="#58B0F0" Aspect="AspectFit"></ImageButton>
+                <ImageButton Source="pencil.png" WidthRequest="25" HorizontalOptions="CenterAndExpand" BackgroundColor="#58B0F0" Aspect="AspectFit"></ImageButton>
                 <Label Text="Accueil" HorizontalTextAlignment="Center"
-                    HorizontalOptions="CenterAndExpand" VerticalOptions="Center" TextColor="White" FontSize="Title"></Label>
-                <ImageButton Source="search.png" WidthRequest="25" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" BackgroundColor="#58B0F0" Aspect="AspectFit"></ImageButton>
+                    HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="Title"></Label>
+                <ImageButton Source="search.png" WidthRequest="25" HorizontalOptions="CenterAndExpand" BackgroundColor="#58B0F0" Aspect="AspectFit"></ImageButton>
             </StackLayout>
         </ContentView>
-        <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Label x:Name="Message" IsVisible="False" TextColor="Red" HorizontalOptions="Center"></Label>
+        <StackLayout Orientation="Vertical" IsVisible="True" x:Name="Formulaire">
+            <Label Text="Connexion à Twitter" HorizontalOptions="CenterAndExpand"
+                HorizontalTextAlignment="Center"></Label>
+            <Entry x:Name="Identifiant" Placeholder="Identifiant Twitter" HorizontalOptions="FillAndExpand" MaxLength="50"
+                Keyboard="Email" ReturnType="Next"/>
+            <Entry x:Name="Password" Placeholder="Mot de passe" HorizontalOptions="FillAndExpand" MaxLength="50"
+                Keyboard="Default" IsPassword="True" ReturnType="Next"/>
+            <StackLayout Orientation="Horizontal">
+            <Switch></Switch>
+                <Label Text="Mémoriser mes informations"></Label>
+            </StackLayout>
+            <Button Text="Se connecter" HorizontalOptions="FillAndExpand" Clicked="Connected_Clicked"></Button>
+        </StackLayout>
+        <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="Tweets" IsVisible="False">
             <StackLayout Orientation="Vertical">
-                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"
+                <StackLayout Orientation="Vertical">
+                    <StackLayout Orientation="Horizontal"
                         Margin="10">
                         <Image Source="https://picsum.photos/50/50/?random)" Aspect="AspectFit" WidthRequest="85" Margin="10"></Image>
                         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
@@ -44,13 +58,14 @@
                 </StackLayout>
             </StackLayout>
         </ScrollView>
-        <ContentView>
+        <ContentView x:Name="BarreNotif" IsVisible="False">
             <StackLayout Orientation="Vertical"  VerticalOptions="CenterAndExpand" BackgroundColor="WhiteSmoke">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
                     <StackLayout Orientation="Horizontal" Spacing="-10">
                         <Button Text="Fil"  BackgroundColor="Transparent"></Button>
                         <Button Text="Notifications" BackgroundColor="Transparent"></Button>
                         <Button Text="Message" BackgroundColor="Transparent"></Button>
+                        <Button Text="Profil" BackgroundColor="Transparent"></Button>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>

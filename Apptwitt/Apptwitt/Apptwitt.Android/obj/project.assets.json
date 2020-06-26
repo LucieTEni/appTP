@@ -1932,24 +1932,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ltouchar2019\\.nuget\\packages\\": {},
+    "C:\\Users\\Boulot\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projet\\appTP\\Apptwitt\\Apptwitt\\Apptwitt.Android\\Apptwitt.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Boulot\\Documents\\projet\\appTP\\Apptwitt\\Apptwitt\\Apptwitt.Android\\Apptwitt.Android.csproj",
       "projectName": "Apptwitt.Android",
-      "projectPath": "D:\\projet\\appTP\\Apptwitt\\Apptwitt\\Apptwitt.Android\\Apptwitt.Android.csproj",
-      "packagesPath": "C:\\Users\\ltouchar2019\\.nuget\\packages\\",
-      "outputPath": "D:\\projet\\appTP\\Apptwitt\\Apptwitt\\Apptwitt.Android\\obj\\",
+      "projectPath": "C:\\Users\\Boulot\\Documents\\projet\\appTP\\Apptwitt\\Apptwitt\\Apptwitt.Android\\Apptwitt.Android.csproj",
+      "packagesPath": "C:\\Users\\Boulot\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Boulot\\Documents\\projet\\appTP\\Apptwitt\\Apptwitt\\Apptwitt.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\ltouchar2019\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Boulot\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1963,8 +1963,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "D:\\projet\\appTP\\Apptwitt\\Apptwitt\\Apptwitt\\Apptwitt.csproj": {
-              "projectPath": "D:\\projet\\appTP\\Apptwitt\\Apptwitt\\Apptwitt\\Apptwitt.csproj"
+            "C:\\Users\\Boulot\\Documents\\projet\\appTP\\Apptwitt\\Apptwitt\\Apptwitt\\Apptwitt.csproj": {
+              "projectPath": "C:\\Users\\Boulot\\Documents\\projet\\appTP\\Apptwitt\\Apptwitt\\Apptwitt\\Apptwitt.csproj"
             }
           }
         }
