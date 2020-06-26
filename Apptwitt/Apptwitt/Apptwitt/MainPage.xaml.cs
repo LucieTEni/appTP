@@ -1,10 +1,13 @@
-﻿using System;
+﻿using Apptwitt.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Net.Security;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 
 namespace Apptwitt
 {
@@ -13,33 +16,32 @@ namespace Apptwitt
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
+        public TwitterService TService = new TwitterService();
         public MainPage()
         {
             InitializeComponent();
         }
 
-        public void Connected_Clicked(Object sender, EventArgs e)
+        public void Connected_Clicked(object sender, EventArgs e)
         {
             Console.WriteLine("You're connected");
-            String Identifiantmess = this.Message.Text;
-            String PassWord = this.Password.Text;
-            this.Message.Text = ("");
-            this.Message.IsVisible = false;
-            if (this.Identifiant.Text == null || this.Password.Text == null)
+            Message.Text = ("");
+            Message.IsVisible = false;
+            if (TService.Authenticate(Identifiant.Text, Password.Text) == true)
             {
-                this.Message.Text = ("Aucun champ ne doit être vide");
-                this.Message.IsVisible = true;
+                Message.IsVisible = true;
+                Message.Text = ("You're Connected !");
+                BarreNotif.IsVisible = true;
+                Tweets.IsVisible = true;
+                Formulaire.IsVisible = false;
             }
-            else if (this.Identifiant.Text.Length < 3 || this.Password.Text.Length < 6)
+            if (!TService.Authenticate(Identifiant.Text, Password.Text))
             {
-                this.Message.Text = ("Le Mot de passe ou l'identifiant est incorrect");
-                this.Message.IsVisible = true;
-            }
-            else
-            {
-                this.BarreNotif.IsVisible = true;
-                this.Tweets.IsVisible = true;
-                this.Formulaire.IsVisible = false;
+                Console.WriteLine(Identifiant.Text);
+                Message.IsVisible = true;
+                Message.Text = ("Identifiant ou Mot de Passe Incorrect");
+                BarreNotif.IsVisible = false;
+                Tweets.IsVisible = false;
             };
         }
     }

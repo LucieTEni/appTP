@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Apptwitt
 {
-    class Tweets
+    public class Tweets
     {
         public string id;
         public string Pseudo;
