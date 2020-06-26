@@ -32,18 +32,17 @@
         </StackLayout>
         <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="Tweets" IsVisible="False">
             <StackLayout Orientation="Vertical">
-                <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Vertical" x:Name="ListTweet">
                     <StackLayout Orientation="Horizontal"
                         Margin="10">
                         <Image Source="https://picsum.photos/50/50/?random)" Aspect="AspectFit" WidthRequest="85" Margin="10"></Image>
                         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="Lulu" TextColor="Black"></Label>
-                                <Label Text="lulu@email.com" TextColor="Black"></Label>
-                                <Label Text="50s" TextColor="Black" HorizontalOptions="EndAndExpand"></Label>
+                                <Label x:Name="Pseudo" Text="" TextColor="Black"></Label>
+                                <Label x:Name="DateCreation" Text="" TextColor="Black"></Label>
+                                <Label x:Name="NameUser" Text="" TextColor="Black" HorizontalOptions="EndAndExpand"></Label>
                             </StackLayout>
-                            <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                            euismod convallis dolor. Quisque ultricies porttitor nunc venenatis facilisis. "
+                            <Label x:Name="Texte" Text=""
                             TextColor="Black"></Label>
                         </StackLayout>
                     </StackLayout>

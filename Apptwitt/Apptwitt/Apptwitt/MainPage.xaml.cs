@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net.Security;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
 
@@ -34,6 +35,14 @@ namespace Apptwitt
                 BarreNotif.IsVisible = true;
                 Tweets.IsVisible = true;
                 Formulaire.IsVisible = false;
+                List<Tweets> tweet = TService.GetTweets("tweet");
+                foreach (Tweets tweets in tweet)
+                {
+                    Pseudo.Text = tweets.Pseudo;
+                    DateCreation.Text = tweets.DateCreation;
+                    Texte.Text = tweets.Texte;
+                    Console.WriteLine(tweets.Pseudo);
+                }
             }
             if (!TService.Authenticate(Identifiant.Text, Password.Text))
             {
@@ -43,6 +52,12 @@ namespace Apptwitt
                 BarreNotif.IsVisible = false;
                 Tweets.IsVisible = false;
             };
+            
+            if (Connectivity.NetworkAccess != NetworkAccess.Internet)
+            {
+                Message.IsVisible = true;
+                Message.Text = ("Veuilez vous connectez à internet");
+            }
         }
     }
 }

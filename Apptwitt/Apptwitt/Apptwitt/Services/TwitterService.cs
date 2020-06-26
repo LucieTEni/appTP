@@ -18,9 +18,14 @@ namespace Apptwitt.Services
             }
         }
 
-        public Array GetTweets(string Tweet)
+        public List<Tweets> GetTweets(string Tweet)
         {
-            throw new NotImplementedException();
+            List<Tweets> tweets = new List<Tweets>();
+            tweets.Add(new Tweets("lulurouge", "pouloulou", "28-05-2020"));
+            tweets.Add(new Tweets("lulurouge", "pouloulou", "28-05-2020"));
+            tweets.Add(new Tweets("lulurouge", "pouloulou", "28-05-2020"));
+
+            return tweets;
         }
     }
 }
